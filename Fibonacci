@@ -1,6 +1,6 @@
 public class Fibonacci {
     public static void main (String [] args) {
-    //var fibonacci = new Fibonacci();
+    
        var n = 12;
        var res = GetFibonacciByNum(n);
     System.out.println("Сумма всех чисел Фибоначчи до "+ n +": " +res);
