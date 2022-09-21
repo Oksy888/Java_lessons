@@ -2,7 +2,15 @@ import java.util.Scanner;
 
 public class ArrUserIn {
     public static void main(String[] arg) {
-        int[][] nums2 = new int[3][3];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите количество строк массива: ");
+        int sizeI = sc.nextInt();
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Введите количество столбцов массива: ");
+        int sizeJ = sc2.nextInt();
+
+        int[][] nums2 = new int[sizeI][sizeJ];
+
         for (int i = 0; i < nums2.length; i++) {
             for (int j = 0; j < nums2[i].length; j++) {
                 Scanner scanner = new Scanner(System.in);

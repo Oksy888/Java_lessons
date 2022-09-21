@@ -18,7 +18,7 @@ public class Arrays {
 
                 System.out.printf("%d ", two[i][j] = 0);
             }
-            System.out.println();
+           System.out.println();
         }
         System.out.println("Длина зубчатого массива = " + two.length);
 
@@ -44,7 +44,6 @@ public class Arrays {
         }
         System.out.println("Количество элементов массива: "+ count);
 
-
         int sum = 0;
         for (int i = 0; i < three.length; i++){
             for (int j = 0; j < three[i].length; j++)
@@ -53,6 +52,16 @@ public class Arrays {
             }
         }
         System.out.printf("Сумма элементов массива3 = %d", sum);
+
+        int[] a = {3,8,2,9};
+        int sum2 = 0;
+        for(int n : a)
+        {
+            sum2 += n;
+            System.out.println(n);
+        }
+        System.out.println("Сумма Массива 4 = "+ sum2);
+
 
     }
 }
