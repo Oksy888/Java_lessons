@@ -7,7 +7,7 @@ public class MaxElement {
     public static void main(String[] args) {
         int[][] array = new int[][]{
                 {4,-7,3},
-                {95,1,-96},
+                {95,150,-96},
                 {1,-3},
                 {0,100}
         };
@@ -26,7 +26,8 @@ public class MaxElement {
     }
     public static int maxElem(int[][] a, int m, int n){
         int maxEl = a[0][0];
-        int [][] arr = new int[m][];
+        int [][] arr = new int[m][n];
+
         System.arraycopy(a,0,arr,0, arr.length);
 
         for(int i = 0; i < arr.length; i++)
@@ -36,7 +37,7 @@ public class MaxElement {
 
             }
         }
-        //Math.abs(a[][])
+
         for(int i = 0; i < arr.length; i++)
         {
             for (int j = 0; j < arr[i].length; j++){
