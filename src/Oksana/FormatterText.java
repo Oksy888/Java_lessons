@@ -24,7 +24,7 @@ public class FormatterText {
             while (index != len){
                 if (counter <= 30){
                     counter += words[index].length();
-                    bufferPhrases.append(words[index]).append(" ");
+                    System.out.println(bufferPhrases.append(words[index]).append(" "));
                     index ++;
                 }
                 else {
